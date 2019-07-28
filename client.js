@@ -32,8 +32,11 @@ function addToTable() {
 
     totalCost += $('#annualSalaryInputField').val() / 12;
     console.log(totalCost);
-    $('#monthlyTotalCostSpan').text(totalCost);
+    $('#monthlyTotalCostSpan').text(totalCost.toFixed(2));
 
+    if(totalCost > 20000) {
+        $('.redAlert').css('background-color', 'red');
+    };
 
     //clear inputs
     $('#firstNameInputField').val('');
