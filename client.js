@@ -26,7 +26,7 @@ function addToTable() {
         $('#idInputField').val() + `</td><td>` +
         $('#titleInputField').val() + `</td><td class="salaryAmount">$` +
         $('#annualSalaryInputField').val() + `</td><td>` +
-        `<button id="employeeDelete">Delete</button></td></tr>`);
+        `<button id="employeeDelete" class="btn btn-danger">Delete</button></td></tr>`);
 
 
 
